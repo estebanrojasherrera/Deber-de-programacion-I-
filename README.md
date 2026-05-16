@@ -1,20 +1,19 @@
 # Taller-S4-programacion-I-
-**Sistema de Gestión de Inventario (Multi-Sucursal)**
+**Sistema de Optimización de Producción**
 
 Ingeniería en Inteligencia Artificial - UDLA. 
 
-Este sistema permite gestionar el inventario de una tienda con 3 sucursales (Norte, Centro y Sur) para un máximo de 10 productos. El proyecto destaca por su arquitectura de **Programación Modular**, dividiendo la lógica en múltiples archivos (`main.c`, `inventario.c`, `inventario.h`) para un código limpio y escalable.
+Este sistema permite gestionar y optimizar la línea de producción de una fábrica para un máximo de 5 productos. El proyecto destaca por su enfoque en la **Planificación Operativa**, permitiendo evaluar la viabilidad técnica de la demanda mediante el cálculo automatizado de requerimientos de tiempo y recursos frente a la capacidad real de la planta.
 
 ## Funcionalidades
-* **Registro de Datos:** Ingreso de nombres, precios y cantidades por sucursal mediante validaciones de entrada.
-* **Cálculos Financieros:** Cálculo del valor total del inventario y del precio promedio por sucursal.
-* **Análisis de Extremos:** Identificación automática del producto más caro y más barato en cada local.
-* **Motor de Búsqueda:** Búsqueda de productos por nombre utilizando la biblioteca `<string.h>`.
-* **Alertas de Stock:** Conteo total de unidades y generación de alertas visuales para productos con stock crítico (≤ 5 unidades).
+* **Gestión de Productos:** Ingreso, visualización, edición y eliminación de datos de manufactura en memoria.
+* **Análisis de Capacidad:** Cálculo automatizado del tiempo total (horas) y recursos necesarios para cumplir con la demanda proyectada.
+* **Simulación de Viabilidad:** Motor de validación que contrasta los requerimientos totales contra la disponibilidad de la fábrica, reportando superávits o déficits exactos.
+* **Motor de Búsqueda:** Localización manual de productos por coincidencia exacta de caracteres para la posterior edición o baja del registro.
+* **Robustez de Interfaz:** Control estricto del buffer de entrada (`stdin`) mediante funciones personalizadas de limpieza para evitar desbordamientos o saltos de lectura.
 
 ## Aspectos Técnicos
-Cumpliendo con los requerimientos estrictos de la consigna, este sistema **no utiliza estructuras (`structs`) ni punteros**. La relación de los datos se maneja íntegramente mediante la técnica de **Arreglos Paralelos** (vectores unidimensionales para textos y matrices bidimensionales flotantes/enteras para valores numéricos), iterados mediante bucles anidados.
-
+Cumpliendo con los requerimientos estrictos de la consigna, este sistema **no utiliza estructuras (`structs`) ni punteros**. La relación y persistencia temporal de los datos se maneja íntegramente mediante la técnica de **Arreglos Paralelos** (vectores bidimensionales de caracteres para cadenas de texto y vectores unidimensionales numéricos para enteros y flotantes), garantizando la integridad de los índices durante operaciones críticas de desplazamiento (bajas).
 ---
 **Autores:**
 * Matías Moya
