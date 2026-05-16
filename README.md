@@ -12,8 +12,6 @@ Este sistema permite gestionar y optimizar la línea de producción de una fábr
 * **Motor de Búsqueda:** Localización manual de productos por coincidencia exacta de caracteres para la posterior edición o baja del registro.
 * **Robustez de Interfaz:** Control estricto del buffer de entrada (`stdin`) mediante funciones personalizadas de limpieza para evitar desbordamientos o saltos de lectura.
 
-## Aspectos Técnicos
-Cumpliendo con los requerimientos estrictos de la consigna, este sistema **no utiliza estructuras (`structs`) ni punteros**. La relación y persistencia temporal de los datos se maneja íntegramente mediante la técnica de **Arreglos Paralelos** (vectores bidimensionales de caracteres para cadenas de texto y vectores unidimensionales numéricos para enteros y flotantes), garantizando la integridad de los índices durante operaciones críticas de desplazamiento (bajas).
 ---
 **Autores:**
 * Matías Moya
