@@ -1,4 +1,4 @@
-# Taller-S4-programacion-I-
+# Ejercico-S7-programacion-I-
 **Sistema de Optimización de Producción**
 
 Ingeniería en Inteligencia Artificial - UDLA. 
